@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Idade Canina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Calculadora de Idade Canina</h1>
+        <h2>Bro faz Sol</h2>
+        <label for="humanAge">Idade Humana:</label>
+        <input type="number" id="humanAge">
+        <button onclick="calculateDogAge()">Calcular</button>
+        <p>Idade Canina: <span id="dogAge"></span></p>
+    </div>
+    <img src=https://www.rbsdirect.com.br/filestore/8/6/7/2/8/7/4_606e6d7e56dc7ba/4782768_1cdc28f74bff261.jpg?w alt="">
+
+
+    <script>
+        function calculateDogAge() {
+            const humanAge = document.getElementById('humanAge').value;
+            const dogAge = humanAge * 7;
+            document.getElementById('dogAge').textContent = dogAge + ' anos de idade humanos.';
+        }
+    </script>
+</body>
+</html>
